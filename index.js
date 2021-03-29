@@ -147,6 +147,17 @@ Use the game function below to do the following:
 
 function game(user, computer){
     /*add your code here*/
+    const getUserChoice = userInput => {
+      userInput = userInput.toLowerCase();
+      if (userInput === 'rock' || userInput === 'scissors'  || userInput === 'paper') {
+          return userInput;
+      } else {
+        console.log('Error, please type: rock, paper, or scissors.');
+      }
+    }
+    const getComputerChoice = () => {
+      console.log(Math.floor(Math.random() * 3)
+    };
 }
   
   
