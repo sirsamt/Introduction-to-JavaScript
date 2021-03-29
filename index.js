@@ -31,6 +31,14 @@ Do the following:
 
    HINT: no function required
 */
+let lateToWork = true;
+let oppositeValue = !lateToWork; 
+
+if (lateToWork) {
+  console.log('Hurry the heck up!');
+} else {
+  console.log('Start work');
+}
 
 
 
