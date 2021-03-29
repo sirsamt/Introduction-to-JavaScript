@@ -55,7 +55,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+const number = '1999';
+number('1999');
+console.log(number);
 
 
 /*
