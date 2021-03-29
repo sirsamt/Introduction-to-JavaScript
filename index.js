@@ -156,11 +156,49 @@ function game(user, computer){
       }
     }
     const getComputerChoice = () => {
-      console.log(Math.floor(Math.random() * 3)
+      const randomNumber = Math.floor(Math.random() * 3)
+      swith (randomNumber) {
+        case 0:
+          return 'rock';
+        case 1: 
+          return 'paper';
+        case 2: 
+          return 'scissors'; 
+
+      }
     };
 }
+   const determineWinner = (userChoice, computerChoice) => {
+    if (userChoice === computerChoice) {
+      return 'Its a tie!';
+    }
+    if (userChoice === 'rock') {
+      if (computerChoise === 'paper') {
+        return 'Sorry, computer won!'
+      } else {
+        return 'you win';
+      }
+    }
+
+    if (userChoice === 'paper') {
+      if (computerChoice === 'scissors') {
+        return 'computer won';
+      } else {
+        return 'you won'; 
+      }
+    }
+
+    if (userChoice === 'scissors') {
+      if (computerChoice === 'rock') {
+        return 'computer won';
+      } else {
+        return 'you win';
+      }
+    }
+   };
   
-  
+   console.log(determineWinner('rock', 'scissors'));
+   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
