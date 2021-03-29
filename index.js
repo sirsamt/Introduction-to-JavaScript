@@ -198,8 +198,17 @@ function game(user, computer){
    };
   
    console.log(determineWinner('rock', 'scissors'));
-   
 
+   const playGame = () => {
+     const userChoice = getUserChoice('paper');
+     const computerChoise = getComputerChoice();
+     console.log('you threw: ' + userChoice);
+     console.log('the computer threw: ' + computerChoice);
+
+     console.log(determineWinner(userChoice, computerChoice));
+   }
+
+  
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 //Metric Converter 
